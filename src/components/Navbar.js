@@ -37,10 +37,21 @@ export default function Navbar({ dictionary }) {
 
                     {/* Desktop Menu - Right Aligned */}
                     <div className={styles.desktopMenu}>
-                        <Link href={`/${lang}/about`} className={styles.navLink}>{dictionary.navigation.about}</Link>
                         <Link href={`/${lang}/services`} className={styles.navLink}>{dictionary.navigation.services}</Link>
-                        <Link href={`/${lang}/projects`} className={styles.navLink}>{dictionary.navigation.projects}</Link>
-                        <Link href={`/${lang}/contact`} className={styles.navLink}>{dictionary.navigation.contact}</Link>
+                        <Link href={`/${lang}/case-studies`} className={styles.navLink}>{dictionary.navigation.caseStudies}</Link>
+                        <Link href={`/${lang}/insights`} className={styles.navLink}>{dictionary.navigation.insights}</Link>
+                        <Link href={`/${lang}/about`} className={styles.navLink}>{dictionary.navigation.about}</Link>
+                        <Link href={`/${lang}/book`} className={styles.ctaBtn}
+                            style={{
+                                background: 'var(--color-primary)',
+                                color: 'white',
+                                padding: '0.5rem 1.25rem',
+                                borderRadius: '4px',
+                                fontWeight: '600',
+                                marginLeft: '1rem'
+                            }}>
+                            {dictionary.navigation.book}
+                        </Link>
 
                         <div className={styles.langSwitcher}>
                             <Link href={switchLang('en')} className={`${styles.langLink} ${lang === 'en' ? styles.activeLang : ''}`}>EN</Link>
@@ -66,10 +77,11 @@ export default function Navbar({ dictionary }) {
                         >
                             <div className={styles.mobileLinks}>
                                 <Link href={`/${lang}`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.home}</Link>
-                                <Link href={`/${lang}/about`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.about}</Link>
                                 <Link href={`/${lang}/services`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.services}</Link>
-                                <Link href={`/${lang}/projects`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.projects}</Link>
-                                <Link href={`/${lang}/contact`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.contact}</Link>
+                                <Link href={`/${lang}/case-studies`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.caseStudies}</Link>
+                                <Link href={`/${lang}/insights`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.insights}</Link>
+                                <Link href={`/${lang}/about`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.about}</Link>
+                                <Link href={`/${lang}/book`} onClick={toggleMenu} className={styles.mobileNavLink}>{dictionary.navigation.book}</Link>
 
                                 <div className={styles.mobileLang}>
                                     <Link href={switchLang('en')} className={`${styles.langLink} ${lang === 'en' ? styles.activeLang : ''}`}>English</Link>

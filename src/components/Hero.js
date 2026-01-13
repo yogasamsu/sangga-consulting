@@ -30,11 +30,11 @@ export default function Hero({ dictionary, lang }) {
                     </p>
 
                     <div className={styles.actions}>
-                        <Link href={`/${lang}/contact`} className={styles.primaryBtn}>
-                            {dictionary.hero.cta}
+                        <Link href={`/${lang}/book`} className={styles.primaryBtn}>
+                            {dictionary.hero.ctaPrimary}
                         </Link>
-                        <Link href={`/${lang}/projects`} className={styles.secondaryBtn}>
-                            {dictionary.navigation.projects}
+                        <Link href={`/${lang}/insights`} className={styles.secondaryBtn}>
+                            {dictionary.hero.ctaSecondary}
                         </Link>
                     </div>
                 </motion.div>

@@ -1,0 +1,141 @@
+.section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #2a4365 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.playbook {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tabs */
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.tab:hover {
+    background: #f0f4f8;
+    color: var(--color-primary);
+}
+
+.activeTab {
+    background: var(--color-primary) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.tabTitle {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Content Display */
+.contentDisplay {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.card {
+    text-align: center;
+    max-width: 600px;
+}
+
+.cardIcon {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    background: #f0f4f8;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.cardTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a202c;
+}
+
+.cardDesc {
+    font-size: 1.25rem;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .tab {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1rem 1.5rem;
+    }
+}

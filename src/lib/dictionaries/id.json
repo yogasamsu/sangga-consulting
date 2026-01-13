@@ -1,23 +1,93 @@
 {
     "navigation": {
-        "home": "Beranda",
-        "about": "Tentang Kami",
+        "home": "Advisory",
         "services": "Layanan",
-        "projects": "Proyek",
-        "contact": "Hubungi Kami",
-        "blog": "Blog"
+        "caseStudies": "Studi Kasus",
+        "insights": "Wawasan",
+        "about": "Tentang Kami",
+        "book": "Konsultasi"
     },
     "hero": {
-        "title": "Mitra Bisnis untuk Keunggulan Operasional",
-        "subtitle": "Sanggabiz Consulting menyediakan solusi department-as-a-service untuk menghemat biaya dan meningkatkan efisiensi.",
-        "cta": "Konsultasi Sekarang"
+        "title": "Strategi. Eksekusi. Hasil.",
+        "subtitle": "Partner strategi-ke-eksekusi untuk perusahaan Indonesia, BUMN, & PMA. Kami rapikan arah, sistem, & tim agar pertumbuhan Anda tidak macet.",
+        "ctaPrimary": "Book Diagnostic Call",
+        "ctaSecondary": "Ambil: Business Health Check"
     },
-    "about": {
-        "title": "Apa itu Sanggabiz?",
-        "description": "Sanggabiz adalah mitra solusi bisnis yang menyediakan layanan department-as-a-service, termasuk Keuangan, HR, Layanan Pelanggan, Pemasaran, Manajemen Proyek, Administrasi, dan Operasional. Kami membantu Anda menghemat hingga 80% biaya tenaga kerja."
+    "proofBar": {
+        "companiesServed": "100++ Klien",
+        "industries": "F&B, Aerospace, Sektor Publik, dll"
+    },
+    "rapi": {
+        "title": "Advisory RAPI™",
+        "subtitle": "Realign. Automate. People. Impact.",
+        "description": "Metodologi untuk memastikan strategi tereksekusi, bukan cuma jadi dokumen.",
+        "sections": {
+            "r": {
+                "title": "Realign",
+                "desc": "Temukan akar masalah, bukan asumsi."
+            },
+            "a": {
+                "title": "Automate",
+                "desc": "Sistem & SOP untuk konsistensi."
+            },
+            "p": {
+                "title": "People",
+                "desc": "Desain organisasi & KPI yang jelas."
+            },
+            "i": {
+                "title": "Impact",
+                "desc": "Metrik yang mengukur hasil nyata."
+            }
+        }
+    },
+    "services": {
+        "title": "Layanan Kami",
+        "subtitle": "Tiga cara bekerjasama dengan kami",
+        "ladder": {
+            "sprint": {
+                "title": "RAPI™ Diagnostic Sprint",
+                "timeline": "10 Hari Kerja",
+                "desc": "Output: Masalah inti + opsi strategi + quick wins + roadmap 90 hari + baseline metric.",
+                "outcome": "Peta Jalan Jelas"
+            },
+            "retainer": {
+                "title": "RAPI™ Advisory Retainer",
+                "timeline": "3-6 Bulan",
+                "desc": "Output: Monthly exec steering + governance KPI + log keputusan + tracking progress.",
+                "outcome": "Pendampingan Eksekusi"
+            },
+            "transform": {
+                "title": "RAPI™ Transformation",
+                "timeline": "8-12 Minggu",
+                "desc": "Output: Desain + Implementasi (dengan jembatan ke Ops Sanggabiz jika perlu).",
+                "outcome": "Perubahan Sistem"
+            }
+        }
+    },
+    "landing": {
+        "pma": {
+            "title": "Masuk ke Indonesia dengan data operator lokal.",
+            "subtitle": "Navigasi regulasi, kanal distribusi, talent, dan keuangan dengan partner yang paham lapangan."
+        },
+        "bumn": {
+            "title": "Tata Kelola, Engineering KPI & Restrukturisasi",
+            "subtitle": "Pemodelan skenario keuangan, RJPP, dan Manajemen Risiko untuk BUMN."
+        },
+        "ngo": {
+            "title": "Partner Tata Kelola & Eksekusi Dampak",
+            "subtitle": "Strategi program, sistem monitoring, dan tata kelola untuk NGO dan inisiatif CSR."
+        }
+    },
+    "leadGen": {
+        "title": "Cek kecocokan",
+        "revenue": "Pendapatan Tahunan",
+        "problem": "Tantangan Utama",
+        "budget": "Kisaran Budget",
+        "urgency": "Urgensi",
+        "submit": "Cek Kelayakan"
     },
     "footer": {
-        "rights": "© 2026 Sanggabiz Consulting. Hak cipta dilindungi.",
-        "contact": "Hubungi: 081578613875"
+        "rights": "© 2026 Sanggabiz Consulting. All rights reserved.",
+        "contact": "Kontak: 081578613875"
     }
 }

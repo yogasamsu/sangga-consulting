@@ -1,20 +1,90 @@
 {
   "navigation": {
-    "home": "Home",
-    "about": "About Us",
+    "home": "Advisory",
     "services": "Services",
-    "projects": "Projects",
-    "contact": "Contact",
-    "blog": "Blog"
+    "caseStudies": "Case Studies",
+    "insights": "Insights",
+    "about": "About",
+    "book": "Book Call"
   },
   "hero": {
-    "title": "Partnering for Business Excellence",
-    "subtitle": "Sanggabiz Consulting provides department-as-a-service solutions to save costs and boost efficiency.",
-    "cta": "Get a Consultation"
+    "title": "Strategy. Execution. Results.",
+    "subtitle": "Strategy-to-execution partner for Indonesian companies, SOEs, and PMAs. We fix direction, systems, & teams to break growth bottlenecks.",
+    "ctaPrimary": "Book Diagnostic Call",
+    "ctaSecondary": "Get: Business Health Check"
   },
-  "about": {
-    "title": "What is Sanggabiz?",
-    "description": "Sanggabiz is a partner business solutions that provides department-as-a-service, including Finance, HR, Customer Service, Marketing, Project Management, Administration, and Operations. We help you to save up to 80% manpower cost."
+  "proofBar": {
+    "companiesServed": "100++ Clients",
+    "industries": "F&B, Aerospace, Public Sector, etc"
+  },
+  "rapi": {
+    "title": "RAPI™ Advisory",
+    "subtitle": "Realign. Automate. People. Impact.",
+    "description": "We ensure strategy gets executed, not just documented.",
+    "sections": {
+      "r": {
+        "title": "Realign",
+        "desc": "Find the real problem, not based on assumptions."
+      },
+      "a": {
+        "title": "Automate",
+        "desc": "Systems & SOPs for consistency."
+      },
+      "p": {
+        "title": "People",
+        "desc": "Clear org design & KPIs."
+      },
+      "i": {
+        "title": "Impact",
+        "desc": "Metrics that track real results."
+      }
+    }
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "Three ways to work with us",
+    "ladder": {
+      "sprint": {
+        "title": "RAPI™ Diagnostic Sprint",
+        "timeline": "10 Days",
+        "desc": "Identify core problems, strategy options, quick wins, and a 90-day roadmap with baseline metrics.",
+        "outcome": "Clear Roadmap"
+      },
+      "retainer": {
+        "title": "RAPI™ Advisory Retainer",
+        "timeline": "3-6 Months",
+        "desc": "Monthly executive steering, KPI governance, decision logging, and progress tracking.",
+        "outcome": "Execution Guardrails"
+      },
+      "transform": {
+        "title": "RAPI™ Transformation",
+        "timeline": "8-12 Weeks",
+        "desc": "Full design and implementation, bridging to Sanggabiz Ops if needed for execution support.",
+        "outcome": "System Change"
+      }
+    }
+  },
+  "landing": {
+    "pma": {
+      "title": "Enter Indonesia with a local operator's truth.",
+      "subtitle": "Navigate regulation, channels, talent, and finance with a partner who knows the ground."
+    },
+    "bumn": {
+      "title": "Governance, KPI Engineering & Restructuring",
+      "subtitle": "Financial scenario modeling, RJPP, Risk Management for State-Owned Enterprises."
+    },
+    "ngo": {
+      "title": "Impact Governance & Execution Partner",
+      "subtitle": "Program strategy, monitoring systems, and governance for NGOs and CSR initiatives."
+    }
+  },
+  "leadGen": {
+    "title": "See if we're a fit",
+    "revenue": "Annual Revenue",
+    "problem": "Primary Challenge",
+    "budget": "Budget Range",
+    "urgency": "Urgency",
+    "submit": "Check Eligibility"
   },
   "footer": {
     "rights": "© 2026 Sanggabiz Consulting. All rights reserved.",

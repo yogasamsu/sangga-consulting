@@ -1,0 +1,49 @@
+.bar {
+  background-color: var(--color-background); /* Or a slightly darker shade if desired */
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 1.5rem 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+}
+
+.label {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: #ddd;
+  display: none;
+}
+
+.text {
+  font-weight: 400;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .divider {
+    display: block;
+  }
+}
