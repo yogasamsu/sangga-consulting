@@ -1,0 +1,23 @@
+{
+    "navigation": {
+        "home": "Beranda",
+        "about": "Tentang Kami",
+        "services": "Layanan",
+        "projects": "Proyek",
+        "contact": "Hubungi Kami",
+        "blog": "Blog"
+    },
+    "hero": {
+        "title": "Mitra Bisnis untuk Keunggulan Operasional",
+        "subtitle": "Sanggabiz Consulting menyediakan solusi department-as-a-service untuk menghemat biaya dan meningkatkan efisiensi.",
+        "cta": "Konsultasi Sekarang"
+    },
+    "about": {
+        "title": "Apa itu Sanggabiz?",
+        "description": "Sanggabiz adalah mitra solusi bisnis yang menyediakan layanan department-as-a-service, termasuk Keuangan, HR, Layanan Pelanggan, Pemasaran, Manajemen Proyek, Administrasi, dan Operasional. Kami membantu Anda menghemat hingga 80% biaya tenaga kerja."
+    },
+    "footer": {
+        "rights": "© 2026 Sanggabiz Consulting. Hak cipta dilindungi.",
+        "contact": "Hubungi: 081578613875"
+    }
+}

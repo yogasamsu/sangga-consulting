@@ -1,0 +1,80 @@
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 4rem 0 2rem;
+    margin-top: auto;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.description {
+    color: var(--color-gray-200);
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+.linksCol h4,
+.contactCol h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.linksCol ul,
+.contactCol ul {
+    list-style: none;
+    padding: 0;
+}
+
+.linksCol li {
+    margin-bottom: 0.8rem;
+}
+
+.linksCol a {
+    color: var(--color-gray-200);
+    transition: color 0.2s;
+}
+
+.linksCol a:hover {
+    color: var(--color-white);
+}
+
+.contactList li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray-200);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--color-gray-500);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}

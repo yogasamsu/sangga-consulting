@@ -1,0 +1,104 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    padding: 1rem 0;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.desktopMenu {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink {
+    font-weight: 500;
+    color: var(--color-text);
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: var(--color-primary);
+}
+
+.contactBtn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.langSwitcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-gray-500);
+}
+
+.langLink {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.activeLang {
+    color: var(--color-primary);
+}
+
+.menuBtn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.mobileMenu {
+    overflow: hidden;
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-gray-100);
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.mobileNavLink {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.mobileLang {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .desktopMenu {
+        display: flex;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+}

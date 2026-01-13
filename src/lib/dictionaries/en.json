@@ -1,0 +1,23 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Partnering for Business Excellence",
+    "subtitle": "Sanggabiz Consulting provides department-as-a-service solutions to save costs and boost efficiency.",
+    "cta": "Get a Consultation"
+  },
+  "about": {
+    "title": "What is Sanggabiz?",
+    "description": "Sanggabiz is a partner business solutions that provides department-as-a-service, including Finance, HR, Customer Service, Marketing, Project Management, Administration, and Operations. We help you to save up to 80% manpower cost."
+  },
+  "footer": {
+    "rights": "© 2026 Sanggabiz Consulting. All rights reserved.",
+    "contact": "Contact: 081578613875"
+  }
+}
