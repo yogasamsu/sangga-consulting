@@ -1,8 +1,7 @@
 .footer {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-white);
-    padding: 4rem 0 2rem;
-    margin-top: auto;
+    padding: 5rem 0 2rem;
 }
 
 .footerContainer {
@@ -14,28 +13,36 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .logo {
+    font-family: var(--font-heading);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--color-white);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: inline-block;
+    letter-spacing: -1px;
 }
 
 .description {
     color: var(--color-gray-200);
     max-width: 300px;
     line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .linksCol h4,
 .contactCol h4 {
-    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: var(--color-secondary);
+    color: var(--color-primary);
+    /* Teal accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .linksCol ul,
@@ -50,19 +57,26 @@
 
 .linksCol a {
     color: var(--color-gray-200);
+    font-weight: 500;
     transition: color 0.2s;
 }
 
 .linksCol a:hover {
-    color: var(--color-white);
+    color: var(--color-primary);
+    padding-left: 5px;
 }
 
 .contactList li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     color: var(--color-gray-200);
+}
+
+.contactList svg {
+    color: var(--color-primary);
+    margin-top: 3px;
 }
 
 .copyright {

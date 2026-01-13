@@ -1,11 +1,15 @@
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: var(--color-white);
+    padding: 1.2rem 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.stickyActive .navbar {
+    padding: 0.8rem 0;
     box-shadow: var(--shadow-sm);
-    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-gray-100);
+    background-color: rgba(255, 255, 255, 0.98);
 }
 
 .navContainer {
@@ -15,44 +19,59 @@
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+    letter-spacing: -0.5px;
 }
 
 .desktopMenu {
     display: none;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .navLink {
-    font-weight: 500;
-    color: var(--color-text);
-    transition: color 0.2s;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-secondary);
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0;
 }
 
-.navLink:hover {
-    color: var(--color-primary);
+.navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
 }
 
-.contactBtn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+.navLink:hover::after {
+    width: 100%;
 }
 
 .langSwitcher {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--color-gray-500);
+    margin-left: 1rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--color-gray-200);
 }
 
 .langLink {
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--color-gray-500);
+    transition: color 0.2s;
 }
 
 .activeLang {
@@ -64,7 +83,7 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .mobileMenu {
@@ -76,21 +95,23 @@
 .mobileLinks {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    gap: 1rem;
+    padding: 2rem;
+    gap: 1.5rem;
 }
 
 .mobileNavLink {
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--color-gray-100);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-secondary);
 }
 
 .mobileLang {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-gray-100);
 }
 
 @media (min-width: 768px) {

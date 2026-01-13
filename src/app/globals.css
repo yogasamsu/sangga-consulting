@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --color-primary: #0B1C3E; /* Navy Blue */
-  --color-secondary: #F4B400; /* Yellow/Orange */
+  --color-primary: #36A691;
+  /* Teal/Emerald Green */
+  --color-secondary: #2B3E4A;
+  /* Dark Charcoal/Navy */
   --color-text: #333333;
-  --color-background: #FFFFFF;
+  --color-background: #F5F7F8;
+  /* Off-white */
   --color-white: #FFFFFF;
-  --color-gray-100: #F3F4F6;
-  --color-gray-200: #E5E7EB;
+  --color-gray-100: #E5E7EB;
+  --color-gray-200: #D1D5DB;
   --color-gray-500: #6B7280;
-  
-  --font-heading: 'Roboto', sans-serif;
+
+  --font-heading: 'Montserrat', sans-serif;
+  /* Implied change, will update import */
   --font-body: 'Inter', sans-serif;
-  
+
   --max-width: 1200px;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -35,7 +39,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--color-primary);
   line-height: 1.2;
