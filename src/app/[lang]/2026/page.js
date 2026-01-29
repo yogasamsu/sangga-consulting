@@ -15,7 +15,7 @@ const slides = [
         subtitle: 'Sangga Consulting Strategy 2026',
         content: 'From Random Referrals to a Predictable Revenue Engine.',
         icon: <FaRocket />,
-        bg: 'linear-gradient(135deg, #2B3E4A 0%, #1a262f 100%)',
+        bg: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
         color: '#fff'
     },
     {
@@ -31,8 +31,8 @@ const slides = [
             { highlight: 'Pemetaan Pajak', detail: 'BPKAD -> Ref: Putut', icon: <FaCheckCircle /> },
         ],
         note: "Key Insight: All deals came from 'Kenal' & 'Trust'.",
-        bg: '#F5F7F8',
-        color: '#333'
+        bg: 'linear-gradient(135deg, #38B2AC 0%, #2C7A7B 100%)',
+        color: '#fff'
     },
     {
         id: 'problem',
@@ -41,7 +41,7 @@ const slides = [
         subtitle: "We can't rely on 'Waiting for Putut' forever.",
         content: 'Current State: Passive Reliance on Referrals.\nFuture State: Active, Systematic Trust Building.',
         icon: <FaLightbulb />,
-        bg: '#36A691',
+        bg: 'linear-gradient(135deg, #319795 0%, #285E61 100%)',
         color: '#fff'
     },
     {
@@ -56,9 +56,10 @@ const slides = [
             samDesc: 'SME & Gov Consulting (DIY/Jateng)',
             som: '1.2 Billion IDR',
             somDesc: 'Sangga Consulting Target (0.02% of SAM)',
+            source: 'Sources: Mordor Intelligence (Indonesia Consulting Market Outlook), BPS DIY (Regional GDP Data), Internal Capacity Analysis.'
         },
-        bg: '#fff',
-        color: '#333'
+        bg: 'linear-gradient(135deg, #4FD1C5 0%, #38B2AC 100%)',
+        color: '#fff'
     },
     {
         id: 'strategy-overview',
@@ -70,7 +71,7 @@ const slides = [
             { name: 'Push', icon: <FaBullhorn />, desc: 'Sniper Approach (Ads, CRM, SOTK)', target: 'Rp 640M' },
             { name: 'Partnership', icon: <FaHandshake />, desc: 'Ecosystem (Levner, Yukbisnis)', target: 'Rp 575M' },
         ],
-        bg: '#2B3E4A',
+        bg: 'linear-gradient(135deg, #319795 0%, #2C7A7B 100%)',
         color: '#fff'
     },
     {
@@ -86,8 +87,8 @@ const slides = [
             'Sales Follow-up'
         ],
         details: 'Youtube: "How to make impactful reports"\nSEO: "Jasa Konsultan Jogja"',
-        bg: '#fff',
-        color: '#333'
+        bg: 'linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%)',
+        color: '#fff'
     },
     {
         id: 'deep-dive-push',
@@ -102,8 +103,8 @@ const slides = [
             'Sales Closing'
         ],
         details: 'Tactics: Search Ads, CRM Blast, Personal Sales Visits',
-        bg: '#F0F4F8',
-        color: '#333'
+        bg: 'linear-gradient(135deg, #4FD1C5 0%, #38B2AC 100%)',
+        color: '#fff'
     },
     {
         id: 'deep-dive-partners',
@@ -118,8 +119,8 @@ const slides = [
             'Maintain & Scale'
         ],
         details: 'Target: 10 Strategic Partners',
-        bg: '#fff',
-        color: '#333'
+        bg: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
+        color: '#fff'
     },
     {
         id: 'timeline',
@@ -132,7 +133,7 @@ const slides = [
             { q: 'Q3', focus: 'Scale', activ: ['Viral Content Series', 'Expand Ads (FB/LinkedIn)', 'Govt Budget Pitching', 'New Product Launch'] },
             { q: 'Q4', focus: 'Harvest', activ: ['Year-End Renewals', '2027 Planning', 'Client Appreciation Event', 'Upselling Existing Bases'] },
         ],
-        bg: '#36A691',
+        bg: 'linear-gradient(135deg, #38B2AC 0%, #285E61 100%)',
         color: '#fff'
     },
     {
@@ -153,7 +154,7 @@ const slides = [
             { pillar: 'Partnership', activity: 'Business Platform', reach: '50', conv: '10%', deals: '5', value: 'Rp 75,000,000', sales: 'Rp 375,000,000' },
         ],
         total: 'Rp 1,265,000,000',
-        bg: '#F5F7F8',
+        bg: 'linear-gradient(135deg, #F0F4F8 0%, #E2E8F0 100%)',
         color: '#333'
     },
     {
@@ -163,7 +164,7 @@ const slides = [
         number: 'Rp 1.265.000.000',
         subtitle: '2026 Revenue Goal',
         breakdown: 'A Data-Driven Path to Success',
-        bg: '#2B3E4A',
+        bg: 'linear-gradient(135deg, #319795 0%, #234E52 100%)',
         color: '#fff'
     }
 ];
@@ -207,8 +208,8 @@ const Slide = ({ slide }) => {
                     transition={{ delay: 0.2 }}
                 >
                     {slide.icon && <div style={{ fontSize: '4rem', marginBottom: '1rem', color: slide.color === '#fff' ? '#4FD1C5' : '#36A691' }}>{slide.icon}</div>}
-                    <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '0.5rem', fontFamily: 'var(--font-heading)' }}>{slide.title}</h1>
-                    <h2 style={{ fontSize: '1.5rem', fontWeight: 400, opacity: 0.9, marginBottom: '3rem', fontFamily: 'var(--font-body)' }}>{slide.subtitle}</h2>
+                    <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '0.5rem', fontFamily: 'var(--font-heading)', color: 'inherit' }}>{slide.title}</h1>
+                    <h2 style={{ fontSize: '1.5rem', fontWeight: 400, opacity: 0.9, marginBottom: '3rem', fontFamily: 'var(--font-body)', color: 'inherit' }}>{slide.subtitle}</h2>
                 </motion.div>
 
                 {/* Layouts */}
@@ -226,14 +227,14 @@ const Slide = ({ slide }) => {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.4 + idx * 0.1 }}
-                                style={{ background: 'white', padding: '1.5rem', borderRadius: '12px', color: '#333', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+                                style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', padding: '1.5rem', borderRadius: '12px', color: 'white', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', border: '1px solid rgba(255,255,255,0.2)' }}
                             >
-                                <div style={{ color: '#36A691', fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.icon}</div>
-                                <h3 style={{ fontSize: '1.2rem', fontWeight: 700 }}>{item.highlight}</h3>
-                                <p style={{ opacity: 0.7 }}>{item.detail}</p>
+                                <div style={{ color: '#E6FFFA', fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.icon}</div>
+                                <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'inherit' }}>{item.highlight}</h3>
+                                <p style={{ opacity: 0.9 }}>{item.detail}</p>
                             </motion.div>
                         ))}
-                        <div style={{ gridColumn: '1/-1', marginTop: '2rem', textAlign: 'center', fontStyle: 'italic', fontSize: '1.2rem', color: '#555' }}>
+                        <div style={{ gridColumn: '1/-1', marginTop: '2rem', textAlign: 'center', fontStyle: 'italic', fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)' }}>
                             {slide.note}
                         </div>
                     </div>
@@ -246,22 +247,27 @@ const Slide = ({ slide }) => {
                 )}
 
                 {slide.layout === 'chart' && (
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', alignItems: 'flex-end', height: '400px' }}>
-                        <motion.div initial={{ height: 0 }} animate={{ height: '100%' }} transition={{ delay: 0.4, duration: 1 }} style={{ width: '200px', background: '#E2E8F0', borderRadius: '8px 8px 0 0', position: 'relative', display: 'flex', flexDirection: 'column', padding: '1rem', justifyContent: 'flex-start' }}>
-                            <span style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>TAM</span>
-                            <span>{slide.content.tam}</span>
-                            <span style={{ fontSize: '0.8rem', marginTop: 'auto' }}>{slide.content.tamDesc}</span>
-                        </motion.div>
-                        <motion.div initial={{ height: 0 }} animate={{ height: '40%' }} transition={{ delay: 0.6, duration: 1 }} style={{ width: '200px', background: '#90CDF4', borderRadius: '8px 8px 0 0', position: 'relative', display: 'flex', flexDirection: 'column', padding: '1rem', justifyContent: 'flex-start' }}>
-                            <span style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>SAM</span>
-                            <span>{slide.content.sam}</span>
-                            <span style={{ fontSize: '0.8rem', marginTop: 'auto' }}>{slide.content.samDesc}</span>
-                        </motion.div>
-                        <motion.div initial={{ height: 0 }} animate={{ height: '15%' }} transition={{ delay: 0.8, duration: 1 }} style={{ width: '200px', background: '#36A691', color: 'white', borderRadius: '8px 8px 0 0', position: 'relative', display: 'flex', flexDirection: 'column', padding: '1rem', justifyContent: 'flex-start' }}>
-                            <span style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>SOM</span>
-                            <span>{slide.content.som}</span>
-                            <span style={{ fontSize: '0.8rem', marginTop: 'auto' }}>{slide.content.somDesc}</span>
-                        </motion.div>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', alignItems: 'flex-end', height: '400px', marginBottom: '2rem' }}>
+                            <motion.div initial={{ height: 0 }} animate={{ height: '100%' }} transition={{ delay: 0.4, duration: 1 }} style={{ width: '200px', background: '#E2E8F0', borderRadius: '8px 8px 0 0', position: 'relative', display: 'flex', flexDirection: 'column', padding: '1rem', justifyContent: 'flex-start' }}>
+                                <span style={{ fontWeight: 'bold', fontSize: '1.2rem', color: '#333' }}>TAM</span>
+                                <span style={{ color: '#333' }}>{slide.content.tam}</span>
+                                <span style={{ fontSize: '0.8rem', marginTop: 'auto', color: '#555' }}>Top-down: Global/National Market<br />(Mordor Intelligence)</span>
+                            </motion.div>
+                            <motion.div initial={{ height: 0 }} animate={{ height: '50%' }} transition={{ delay: 0.6, duration: 1 }} style={{ width: '200px', background: '#90CDF4', borderRadius: '8px 8px 0 0', position: 'relative', display: 'flex', flexDirection: 'column', padding: '1rem', justifyContent: 'flex-start' }}>
+                                <span style={{ fontWeight: 'bold', fontSize: '1.2rem', color: '#333' }}>SAM</span>
+                                <span style={{ color: '#333' }}>{slide.content.sam}</span>
+                                <span style={{ fontSize: '0.8rem', marginTop: 'auto', color: '#555' }}>Serviceable: SME & Gov in DIY/Jateng<br />(Est. 10% of Regional GDP)</span>
+                            </motion.div>
+                            <motion.div initial={{ height: 0 }} animate={{ height: '25%' }} transition={{ delay: 0.8, duration: 1 }} style={{ width: '200px', background: '#36A691', color: 'white', borderRadius: '8px 8px 0 0', position: 'relative', display: 'flex', flexDirection: 'column', padding: '1rem', justifyContent: 'flex-start' }}>
+                                <span style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>SOM</span>
+                                <span>{slide.content.som}</span>
+                                <span style={{ fontSize: '0.8rem', marginTop: 'auto' }}>Target: 0.02% of SAM<br />(Realistic Capacity)</span>
+                            </motion.div>
+                        </div>
+                        <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)', fontStyle: 'italic', maxWidth: '800px' }}>
+                            {slide.content.source}
+                        </div>
                     </div>
                 )}
 
@@ -276,7 +282,7 @@ const Slide = ({ slide }) => {
                                 style={{ background: 'rgba(255,255,255,0.1)', padding: '2rem', borderRadius: '16px', backdropFilter: 'blur(10px)' }}
                             >
                                 <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#4FD1C5' }}>{p.icon}</div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>{p.name}</h3>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'inherit' }}>{p.name}</h3>
                                 <p style={{ fontSize: '1rem', marginBottom: '1rem', opacity: 0.8 }}>{p.desc}</p>
                                 <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#FBD38D' }}>{p.target}</div>
                             </motion.div>
@@ -303,7 +309,7 @@ const Slide = ({ slide }) => {
                             {/* Connecting Line */}
                             <div style={{ position: 'absolute', top: '20px', left: '10%', right: '10%', height: '2px', background: '#E2E8F0', zIndex: -1 }} />
                         </div>
-                        <div style={{ background: '#F7FAFC', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #36A691' }}>
+                        <div style={{ background: 'rgba(255,255,255,0.1)', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #36A691', backdropFilter: 'blur(10px)' }}>
                             <strong>Strategy Details:</strong> <br />
                             {slide.details}
                         </div>
@@ -321,7 +327,7 @@ const Slide = ({ slide }) => {
                                 style={{ background: 'rgba(255,255,255,0.15)', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.2)' }}
                             >
                                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.3)', paddingBottom: '0.5rem' }}>
-                                    <h3 style={{ fontSize: '1.5rem', fontWeight: 800 }}>{q.q}</h3>
+                                    <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'inherit' }}>{q.q}</h3>
                                     <span style={{ fontSize: '1.2rem', fontWeight: 400, color: '#FBD38D' }}>{q.focus}</span>
                                 </div>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
