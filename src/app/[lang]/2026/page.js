@@ -15,7 +15,7 @@ const slides = [
         subtitle: 'Sangga Consulting Strategy 2026',
         content: 'From Random Referrals to a Predictable Revenue Engine.',
         icon: <FaRocket />,
-        bg: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
+        bg: 'linear-gradient(135deg, #134E4A 0%, #115E59 100%)',
         color: '#fff'
     },
     {
@@ -31,7 +31,7 @@ const slides = [
             { highlight: 'Pemetaan Pajak', detail: 'BPKAD -> Ref: Putut', icon: <FaCheckCircle /> },
         ],
         note: "Key Insight: All deals came from 'Kenal' & 'Trust'.",
-        bg: 'linear-gradient(135deg, #38B2AC 0%, #2C7A7B 100%)',
+        bg: 'linear-gradient(135deg, #134E4A 0%, #0F766E 100%)',
         color: '#fff'
     },
     {
@@ -41,7 +41,7 @@ const slides = [
         subtitle: "We can't rely on 'Waiting for Putut' forever.",
         content: 'Current State: Passive Reliance on Referrals.\nFuture State: Active, Systematic Trust Building.',
         icon: <FaLightbulb />,
-        bg: 'linear-gradient(135deg, #319795 0%, #285E61 100%)',
+        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
         color: '#fff'
     },
     {
@@ -58,7 +58,7 @@ const slides = [
             somDesc: 'Sangga Consulting Target (0.02% of SAM)',
             source: 'Sources: Mordor Intelligence (Indonesia Consulting Market Outlook), BPS DIY (Regional GDP Data), Internal Capacity Analysis.'
         },
-        bg: 'linear-gradient(135deg, #4FD1C5 0%, #38B2AC 100%)',
+        bg: 'linear-gradient(135deg, #115E59 0%, #0D9488 100%)',
         color: '#fff'
     },
     {
@@ -71,7 +71,7 @@ const slides = [
             { name: 'Push', icon: <FaBullhorn />, desc: 'Sniper Approach (Ads, CRM, SOTK)', target: 'Rp 640M' },
             { name: 'Partnership', icon: <FaHandshake />, desc: 'Ecosystem (Levner, Yukbisnis)', target: 'Rp 575M' },
         ],
-        bg: 'linear-gradient(135deg, #319795 0%, #2C7A7B 100%)',
+        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
         color: '#fff'
     },
     {
@@ -87,7 +87,7 @@ const slides = [
             'Sales Follow-up'
         ],
         details: 'Youtube: "How to make impactful reports"\nSEO: "Jasa Konsultan Jogja"',
-        bg: 'linear-gradient(135deg, #81E6D9 0%, #4FD1C5 100%)',
+        bg: 'linear-gradient(135deg, #115E59 0%, #0D9488 100%)',
         color: '#fff'
     },
     {
@@ -103,7 +103,7 @@ const slides = [
             'Sales Closing'
         ],
         details: 'Tactics: Search Ads, CRM Blast, Personal Sales Visits',
-        bg: 'linear-gradient(135deg, #4FD1C5 0%, #38B2AC 100%)',
+        bg: 'linear-gradient(135deg, #0F766E 0%, #115E59 100%)',
         color: '#fff'
     },
     {
@@ -119,7 +119,7 @@ const slides = [
             'Maintain & Scale'
         ],
         details: 'Target: 10 Strategic Partners',
-        bg: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
+        bg: 'linear-gradient(135deg, #134E4A 0%, #0D9488 100%)',
         color: '#fff'
     },
     {
@@ -133,7 +133,7 @@ const slides = [
             { q: 'Q3', focus: 'Scale', activ: ['Viral Content Series', 'Expand Ads (FB/LinkedIn)', 'Govt Budget Pitching', 'New Product Launch'] },
             { q: 'Q4', focus: 'Harvest', activ: ['Year-End Renewals', '2027 Planning', 'Client Appreciation Event', 'Upselling Existing Bases'] },
         ],
-        bg: 'linear-gradient(135deg, #38B2AC 0%, #285E61 100%)',
+        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
         color: '#fff'
     },
     {
@@ -154,7 +154,7 @@ const slides = [
             { pillar: 'Partnership', activity: 'Business Platform', reach: '50', conv: '10%', deals: '5', value: 'Rp 75,000,000', sales: 'Rp 375,000,000' },
         ],
         total: 'Rp 1,265,000,000',
-        bg: 'linear-gradient(135deg, #F0F4F8 0%, #E2E8F0 100%)',
+        bg: 'linear-gradient(135deg, #F0FDF4 0%, #E6FFFA 100%)',
         color: '#333'
     },
     {
@@ -164,7 +164,7 @@ const slides = [
         number: 'Rp 1.265.000.000',
         subtitle: '2026 Revenue Goal',
         breakdown: 'A Data-Driven Path to Success',
-        bg: 'linear-gradient(135deg, #319795 0%, #234E52 100%)',
+        bg: 'linear-gradient(135deg, #134E4A 0%, #0F766E 100%)',
         color: '#fff'
     }
 ];
