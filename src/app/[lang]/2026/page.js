@@ -136,12 +136,33 @@ const slides = [
         color: '#fff'
     },
     {
-        id: 'revenue',
+        id: 'revenue-table',
+        layout: 'table',
+        title: 'Estimated Revenue Model',
+        subtitle: 'Detailed Activity & Conversion Projection',
+        rows: [
+            { pillar: 'Pull', activity: 'Youtube Video', reach: '10,000', conv: '0.01%', deals: '1', value: 'Rp 25,000,000', sales: 'Rp 25,000,000' },
+            { pillar: 'Pull', activity: 'SEO Keywords', reach: '10,000', conv: '0.01%', deals: '1', value: 'Rp 25,000,000', sales: 'Rp 25,000,000' },
+            { pillar: 'Push', activity: 'Ads Push', reach: '100,000', conv: '0.01%', deals: '10', value: 'Rp 25,000,000', sales: 'Rp 250,000,000' },
+            { pillar: 'Push', activity: 'Join Pitching', reach: '200', conv: '1%', deals: '2', value: 'Rp 50,000,000', sales: 'Rp 100,000,000' },
+            { pillar: 'Push', activity: 'Referral (Existing Clients)', reach: '50', conv: '5%', deals: '3', value: 'Rp 50,000,000', sales: 'Rp 125,000,000' },
+            { pillar: 'Push', activity: 'CRM (Email & WA)', reach: '10,000', conv: '0.05%', deals: '5', value: 'Rp 25,000,000', sales: 'Rp 125,000,000' },
+            { pillar: 'Push', activity: 'Sales Visit', reach: '150', conv: '1%', deals: '2', value: 'Rp 25,000,000', sales: 'Rp 37,500,000' },
+            { pillar: 'Push', activity: 'Business Forum', reach: '10', conv: '1%', deals: '0', value: 'Rp 25,000,000', sales: 'Rp 2,500,000' },
+            { pillar: 'Partnership', activity: 'Maintain Relationship', reach: '2', conv: '100%', deals: '2', value: 'Rp 100,000,000', sales: 'Rp 200,000,000' },
+            { pillar: 'Partnership', activity: 'Business Platform', reach: '50', conv: '10%', deals: '5', value: 'Rp 75,000,000', sales: 'Rp 375,000,000' },
+        ],
+        total: 'Rp 1,265,000,000',
+        bg: '#F5F7F8',
+        color: '#333'
+    },
+    {
+        id: 'final-goal',
         layout: 'big-number',
-        title: 'The Goal',
+        title: 'The Target',
         number: 'Rp 1.265.000.000',
-        subtitle: 'Estimated Revenue 2026',
-        breakdown: 'Pull: 50M | Push: 640M | Partner: 575M',
+        subtitle: '2026 Revenue Goal',
+        breakdown: 'A Data-Driven Path to Success',
         bg: '#2B3E4A',
         color: '#fff'
     }
@@ -326,6 +347,46 @@ const Slide = ({ slide }) => {
                             {slide.number}
                         </motion.div>
                         <p style={{ fontSize: '1.5rem', opacity: 0.8 }}>{slide.breakdown}</p>
+                    </div>
+                )}
+
+                {slide.layout === 'table' && (
+                    <div style={{ overflowX: 'auto', width: '100%', maxWidth: '1400px' }}>
+                        <motion.table
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4 }}
+                            style={{ width: '100%', borderCollapse: 'collapse', color: '#333', background: 'white', borderRadius: '8px', overflow: 'hidden', fontSize: '0.9rem' }}
+                        >
+                            <thead style={{ background: '#36A691', color: 'white' }}>
+                                <tr>
+                                    <th style={{ padding: '12px', textAlign: 'left' }}>Pillar</th>
+                                    <th style={{ padding: '12px', textAlign: 'left' }}>Activities</th>
+                                    <th style={{ padding: '12px', textAlign: 'right' }}>Potential Reach</th>
+                                    <th style={{ padding: '12px', textAlign: 'right' }}>Conv. Rate</th>
+                                    <th style={{ padding: '12px', textAlign: 'right' }}>Deals</th>
+                                    <th style={{ padding: '12px', textAlign: 'right' }}>Project Value</th>
+                                    <th style={{ padding: '12px', textAlign: 'right' }}>Sales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {slide.rows.map((row, idx) => (
+                                    <tr key={idx} style={{ borderBottom: '1px solid #eee', background: idx % 2 === 0 ? '#fff' : '#f9f9f9' }}>
+                                        <td style={{ padding: '10px', fontWeight: 'bold' }}>{row.pillar}</td>
+                                        <td style={{ padding: '10px' }}>{row.activity}</td>
+                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.reach}</td>
+                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.conv}</td>
+                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.deals}</td>
+                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.value}</td>
+                                        <td style={{ padding: '10px', textAlign: 'right', fontWeight: 'bold' }}>{row.sales}</td>
+                                    </tr>
+                                ))}
+                                <tr style={{ background: '#2B3E4A', color: 'white', fontWeight: 'bold' }}>
+                                    <td colSpan={6} style={{ padding: '15px', textAlign: 'right' }}>Grand Total</td>
+                                    <td style={{ padding: '15px', textAlign: 'right', fontSize: '1.2rem', color: '#4FD1C5' }}>{slide.total}</td>
+                                </tr>
+                            </tbody>
+                        </motion.table>
                     </div>
                 )}
 
