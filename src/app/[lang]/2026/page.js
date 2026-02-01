@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChartLine, FaHandshake, FaBullhorn, FaCheckCircle, FaUsers, FaLightbulb, FaRocket, FaYoutube, FaSearch, FaEnvelope, FaExclamationTriangle } from 'react-icons/fa';
+import { FaChartLine, FaHandshake, FaBullhorn, FaCheckCircle, FaUsers, FaLightbulb, FaRocket, FaYoutube, FaSearch, FaEnvelope, FaExclamationTriangle, FaBriefcase } from 'react-icons/fa';
 
 // --- Data & Content ---
 
@@ -77,10 +77,11 @@ const slides = [
     {
         id: 'strategy-overview',
         layout: 'three-pillars',
-        title: 'The 3P Strategy Engine',
+        title: 'The 4P Strategy Engine',
         subtitle: "Building 'Kenal' & 'Trust' at Scale",
         pillars: [
             { name: 'Pull', icon: <FaYoutube />, desc: 'Content Marketing (Youtube, SEO, Email)', target: 'Rp 50M' },
+            { name: 'Pitching', icon: <FaBriefcase />, desc: 'Proposal & Tendering (LPSE/BUMN)', target: 'Rp 200M' },
             { name: 'Push', icon: <FaBullhorn />, desc: 'Sniper Approach (Ads, CRM, SOTK)', target: 'Rp 640M' },
             { name: 'Partnership', icon: <FaHandshake />, desc: 'Ecosystem (Levner, Yukbisnis)', target: 'Rp 575M' },
         ],
@@ -133,6 +134,21 @@ const slides = [
         ],
         details: 'Target: 10 Strategic Partners',
         bg: 'linear-gradient(135deg, #134E4A 0%, #0D9488 100%)',
+        color: '#fff'
+    },
+    {
+        id: 'deep-dive-pitching',
+        layout: 'user-journey',
+        title: 'Pitching Strategy',
+        subtitle: 'Proactive Deal Hunting',
+        steps: [
+            'Automate crawling / manual searching',
+            'Submit proposal',
+            'Join pitching',
+            'Deal'
+        ],
+        details: 'Target: 2 Deals/month via LPSE & tenders',
+        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
         color: '#fff'
     },
     {
@@ -310,7 +326,7 @@ const Slide = ({ slide }) => {
                 )}
 
                 {slide.layout === 'three-pillars' && (
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem', width: '100%', maxWidth: '1400px' }}>
                         {slide.pillars.map((p, idx) => (
                             <motion.div
                                 key={idx}
