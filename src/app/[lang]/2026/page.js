@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChartLine, FaHandshake, FaBullhorn, FaCheckCircle, FaUsers, FaLightbulb, FaRocket, FaYoutube, FaSearch, FaEnvelope } from 'react-icons/fa';
+import { FaChartLine, FaHandshake, FaBullhorn, FaCheckCircle, FaUsers, FaLightbulb, FaRocket, FaYoutube, FaSearch, FaEnvelope, FaExclamationTriangle } from 'react-icons/fa';
 
 // --- Data & Content ---
 
@@ -32,6 +32,19 @@ const slides = [
         ],
         note: "Key Insight: All deals came from 'Kenal' & 'Trust'.",
         bg: 'linear-gradient(135deg, #134E4A 0%, #0F766E 100%)',
+        color: '#fff'
+    },
+    {
+        id: 'communication-topics',
+        layout: 'three-pillars',
+        title: 'Communication Topics',
+        subtitle: 'Bertumbuh Ditengah Ancaman Resesi',
+        pillars: [
+            { name: 'Ancaman Krisis', icon: <FaExclamationTriangle />, desc: 'Kondisi Geopolitik tidak menentu & ancaman resesi global.', target: 'Wanti-wanti' },
+            { name: 'Peluang', icon: <FaLightbulb />, desc: 'Efisiensi operation & digitalisasi sebagai kunci survival.', target: 'Optimis' },
+            { name: 'Strategy Tumbuh', icon: <FaChartLine />, desc: 'Pivoting strategy untuk tetap bertumbuh saat krisis.', target: 'Action' },
+        ],
+        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
         color: '#fff'
     },
     {
