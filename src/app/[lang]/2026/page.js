@@ -346,7 +346,7 @@ const Slide = ({ slide }) => {
 
                 {slide.layout === 'user-journey' && (
                     <div style={{ position: 'relative' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '3rem', position: 'relative' }}>
                             {slide.steps.map((step, idx) => (
                                 <div key={idx} style={{ position: 'relative', width: '18%', textAlign: 'center' }}>
                                     <motion.div
