@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChartLine, FaHandshake, FaBullhorn, FaCheckCircle, FaUsers, FaLightbulb, FaRocket, FaYoutube, FaSearch, FaEnvelope, FaExclamationTriangle, FaBriefcase } from 'react-icons/fa';
+import { FaChartLine, FaHandshake, FaBullhorn, FaCheckCircle, FaUsers, FaLightbulb, FaRocket, FaYoutube, FaSearch, FaEnvelope, FaExclamationTriangle, FaBriefcase, FaShieldAlt, FaLandmark } from 'react-icons/fa';
 
 // --- Data & Content ---
 
@@ -45,6 +45,19 @@ const slides = [
             { name: 'Strategy Tumbuh', icon: <FaChartLine />, desc: 'Pivoting strategy untuk tetap bertumbuh saat krisis.', target: 'Action' },
         ],
         bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
+        color: '#fff'
+    },
+    {
+        id: 'market-segmentation',
+        layout: 'three-pillars',
+        title: 'Who Will be Our Market?',
+        subtitle: 'Prioritizing Industries based on Economic Climate',
+        pillars: [
+            { name: 'Defensive', icon: <FaShieldAlt />, desc: '- Tekstil\n- Batu bara / Commodities\n- Konstruksi\n- BPKAD seluruh Indonesia', target: 'Declining' },
+            { name: 'Stable', icon: <FaLandmark />, desc: '- Government\n- BUMN', target: 'Stable' },
+            { name: 'Offensive', icon: <FaRocket />, desc: '- Gold\n- Fintech\n- Startup', target: 'Growing' },
+        ],
+        bg: 'linear-gradient(135deg, #134E4A 0%, #0F766E 100%)',
         color: '#fff'
     },
     {
@@ -337,7 +350,7 @@ const Slide = ({ slide }) => {
                             >
                                 <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#4FD1C5' }}>{p.icon}</div>
                                 <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'inherit' }}>{p.name}</h3>
-                                <p style={{ fontSize: '1rem', marginBottom: '1rem', opacity: 0.8 }}>{p.desc}</p>
+                                <p style={{ fontSize: '1rem', marginBottom: '1rem', opacity: 0.8, whiteSpace: 'pre-line' }}>{p.desc}</p>
                                 <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#FBD38D' }}>{p.target}</div>
                             </motion.div>
                         ))}
