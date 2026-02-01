@@ -141,19 +141,44 @@ const slides = [
         layout: 'table',
         title: 'Estimated Revenue Model',
         subtitle: 'Detailed Activity & Conversion Projection',
+        headers: ['Pillar', 'Activities', 'Potential Reach', 'Conversion rate', 'Deal Projects', 'Project value', 'Sales'],
         rows: [
-            { pillar: 'Pull', activity: 'Youtube Video', reach: '10,000', conv: '0.01%', deals: '1', value: 'Rp 25,000,000', sales: 'Rp 25,000,000' },
-            { pillar: 'Pull', activity: 'SEO Keywords', reach: '10,000', conv: '0.01%', deals: '1', value: 'Rp 25,000,000', sales: 'Rp 25,000,000' },
-            { pillar: 'Push', activity: 'Ads Push', reach: '100,000', conv: '0.01%', deals: '10', value: 'Rp 25,000,000', sales: 'Rp 250,000,000' },
-            { pillar: 'Push', activity: 'Join Pitching', reach: '200', conv: '1%', deals: '2', value: 'Rp 50,000,000', sales: 'Rp 100,000,000' },
-            { pillar: 'Push', activity: 'Referral (Existing Clients)', reach: '50', conv: '5%', deals: '3', value: 'Rp 50,000,000', sales: 'Rp 125,000,000' },
-            { pillar: 'Push', activity: 'CRM (Email & WA)', reach: '10,000', conv: '0.05%', deals: '5', value: 'Rp 25,000,000', sales: 'Rp 125,000,000' },
-            { pillar: 'Push', activity: 'Sales Visit', reach: '150', conv: '1%', deals: '2', value: 'Rp 25,000,000', sales: 'Rp 37,500,000' },
-            { pillar: 'Push', activity: 'Business Forum', reach: '10', conv: '1%', deals: '0', value: 'Rp 25,000,000', sales: 'Rp 2,500,000' },
-            { pillar: 'Partnership', activity: 'Maintain Relationship', reach: '2', conv: '100%', deals: '2', value: 'Rp 100,000,000', sales: 'Rp 200,000,000' },
-            { pillar: 'Partnership', activity: 'Business Platform', reach: '50', conv: '10%', deals: '5', value: 'Rp 75,000,000', sales: 'Rp 375,000,000' },
+            { c1: 'Pull', c2: 'Youtube video', c3: '10000', c4: '0.01%', c5: '1', c6: 'Rp25,000,000', c7: 'Rp25,000,000' },
+            { c1: '', c2: 'SEO', c3: '10000', c4: '0.01%', c5: '1', c6: 'Rp25,000,000', c7: 'Rp25,000,000' },
+            { c1: 'Pitching', c2: 'Join pitching', c3: '200', c4: '1%', c5: '2', c6: 'Rp100,000,000', c7: 'Rp200,000,000' },
+            { c1: 'Push', c2: 'Ads push', c3: '100000', c4: '0.01%', c5: '10', c6: 'Rp25,000,000', c7: 'Rp250,000,000' },
+            { c1: '', c2: 'Meminta referral ke existing client (BPKAD, PDAM, KSO etc)', c3: '50', c4: '5%', c5: '3', c6: 'Rp75,000,000', c7: 'Rp225,000,000' },
+            { c1: '', c2: 'CRM (Email & Whatsapp)', c3: '10000', c4: '0.01%', c5: '1', c6: 'Rp25,000,000', c7: 'Rp25,000,000' },
+            { c1: '', c2: 'Sales Engagement & visit', c3: '200', c4: '1%', c5: '2', c6: 'Rp50,000,000', c7: 'Rp100,000,000' },
+            { c1: '', c2: 'Business forum', c3: '10', c4: '20%', c5: '2', c6: 'Rp25,000,000', c7: 'Rp50,000,000' },
+            { c1: 'Partnership', c2: 'Maintain relationship (BPKAD, Levner)', c3: '2', c4: '100%', c5: '2', c6: 'Rp100,000,000', c7: 'Rp200,000,000' },
+            { c1: '', c2: 'Engage to business platform', c3: '50', c4: '10%', c5: '5', c6: 'Rp25,000,000', c7: 'Rp125,000,000' },
         ],
-        total: 'Rp 1,265,000,000',
+        totalRow: true,
+        total: 'Rp1,225,000,000',
+        bg: 'linear-gradient(135deg, #F0FDF4 0%, #E6FFFA 100%)',
+        color: '#333'
+    },
+    {
+        id: 'revenue-timeline',
+        layout: 'table',
+        title: 'Timeline Revenue per Month',
+        subtitle: 'Cashflow Projection 2026',
+        headers: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Total Month'],
+        rows: [
+            { m1: '', m2: '', m3: '', m4: '', m5: 'Rp25,000,000', m6: '', m7: '', m8: '', m9: '', m10: '', m11: '', m12: '', t: 'Rp25,000,000' },
+            { m1: '', m2: '', m3: '', m4: '', m5: '', m6: '', m7: 'Rp25,000,000', m8: '', m9: '', m10: '', m11: '', m12: '', t: 'Rp25,000,000' },
+            { m1: '', m2: '', m3: 'Rp50,000,000', m4: '', m5: '', m6: '', m7: 'Rp50,000,000', m8: '', m9: '', m10: 'Rp100,000,000', m11: '', m12: '', t: 'Rp200,000,000' },
+            { m1: '', m2: '', m3: '', m4: '', m5: 'Rp31,250,000', m6: 'Rp31,250,000', m7: 'Rp31,250,000', m8: 'Rp31,250,000', m9: 'Rp31,250,000', m10: 'Rp31,250,000', m11: 'Rp31,250,000', m12: 'Rp31,250,000', t: 'Rp250,000,000' },
+            { m1: '', m2: '', m3: 'Rp50,000,000', m4: '', m5: '', m6: '', m7: 'Rp50,000,000', m8: '', m9: '', m10: 'Rp50,000,000', m11: '', m12: 'Rp75,000,000', t: 'Rp225,000,000' },
+            { m1: '', m2: '', m3: '', m4: '', m5: '', m6: '', m7: '', m8: '', m9: '', m10: '', m11: '', m12: 'Rp25,000,000', t: 'Rp25,000,000' },
+            { m1: '', m2: '', m3: 'Rp25,000,000', m4: '', m5: 'Rp25,000,000', m6: '', m7: '', m8: '', m9: 'Rp25,000,000', m10: '', m11: '', m12: 'Rp25,000,000', t: 'Rp100,000,000' },
+            { m1: '', m2: '', m3: '', m4: '', m5: '', m6: 'Rp25,000,000', m7: '', m8: '', m9: '', m10: '', m11: 'Rp25,000,000', m12: '', t: 'Rp50,000,000' },
+            { m1: '', m2: 'Rp100,000,000', m3: '', m4: '', m5: '', m6: '', m7: '', m8: '', m9: '', m10: 'Rp100,000,000', m11: '', m12: '', t: 'Rp200,000,000' },
+            { m1: '', m2: '', m3: '', m4: 'Rp25,000,000', m5: '', m6: '', m7: 'Rp50,000,000', m8: '', m9: '', m10: '', m11: 'Rp50,000,000', m12: '', t: 'Rp125,000,000' },
+            { m1: 'Rp0', m2: 'Rp100,000,000', m3: 'Rp225,000,000', m4: 'Rp25,000,000', m5: 'Rp81,250,000', m6: 'Rp81,250,000', m7: 'Rp156,250,000', m8: 'Rp31,250,000', m9: 'Rp56,250,000', m10: 'Rp206,250,000', m11: 'Rp106,250,000', m12: 'Rp156,250,000', t: 'Rp1,225,000,000' },
+        ],
+        totalRow: false,
         bg: 'linear-gradient(135deg, #F0FDF4 0%, #E6FFFA 100%)',
         color: '#333'
     },
@@ -161,7 +186,7 @@ const slides = [
         id: 'final-goal',
         layout: 'big-number',
         title: 'The Target',
-        number: 'Rp 1.265.000.000',
+        number: 'Rp 1.225.000.000',
         subtitle: '2026 Revenue Goal',
         breakdown: 'A Data-Driven Path to Success',
         bg: 'linear-gradient(135deg, #134E4A 0%, #0F766E 100%)',
@@ -357,40 +382,54 @@ const Slide = ({ slide }) => {
                 )}
 
                 {slide.layout === 'table' && (
-                    <div style={{ overflowX: 'auto', width: '100%', maxWidth: '1400px' }}>
+                    <div style={{ overflowX: 'auto', width: '100%', maxWidth: '100vw', padding: '0 1rem' }}>
                         <motion.table
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
-                            style={{ width: '100%', borderCollapse: 'collapse', color: '#333', background: 'white', borderRadius: '8px', overflow: 'hidden', fontSize: '0.9rem' }}
+                            style={{ width: '100%', minWidth: '800px', borderCollapse: 'collapse', color: '#333', background: 'white', borderRadius: '8px', overflow: 'hidden', fontSize: '0.85rem' }}
                         >
                             <thead style={{ background: '#36A691', color: 'white' }}>
                                 <tr>
-                                    <th style={{ padding: '12px', textAlign: 'left' }}>Pillar</th>
-                                    <th style={{ padding: '12px', textAlign: 'left' }}>Activities</th>
-                                    <th style={{ padding: '12px', textAlign: 'right' }}>Potential Reach</th>
-                                    <th style={{ padding: '12px', textAlign: 'right' }}>Conv. Rate</th>
-                                    <th style={{ padding: '12px', textAlign: 'right' }}>Deals</th>
-                                    <th style={{ padding: '12px', textAlign: 'right' }}>Project Value</th>
-                                    <th style={{ padding: '12px', textAlign: 'right' }}>Sales</th>
+                                    {(slide.headers || []).map((header, idx) => (
+                                        <th key={idx} style={{
+                                            padding: '12px',
+                                            textAlign: idx === 0 ? 'left' : 'right',
+                                            position: idx === 0 ? 'sticky' : 'static',
+                                            left: 0,
+                                            background: '#36A691',
+                                            zIndex: 10
+                                        }}>
+                                            {header}
+                                        </th>
+                                    ))}
                                 </tr>
                             </thead>
                             <tbody>
                                 {slide.rows.map((row, idx) => (
                                     <tr key={idx} style={{ borderBottom: '1px solid #eee', background: idx % 2 === 0 ? '#fff' : '#f9f9f9' }}>
-                                        <td style={{ padding: '10px', fontWeight: 'bold' }}>{row.pillar}</td>
-                                        <td style={{ padding: '10px' }}>{row.activity}</td>
-                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.reach}</td>
-                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.conv}</td>
-                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.deals}</td>
-                                        <td style={{ padding: '10px', textAlign: 'right' }}>{row.value}</td>
-                                        <td style={{ padding: '10px', textAlign: 'right', fontWeight: 'bold' }}>{row.sales}</td>
+                                        {Object.values(row).map((cell, cellIdx) => (
+                                            <td key={cellIdx} style={{
+                                                padding: '10px',
+                                                textAlign: cellIdx === 0 ? 'left' : 'right',
+                                                fontWeight: cellIdx === 0 || slide.isTotal ? 'bold' : 'normal',
+                                                position: cellIdx === 0 ? 'sticky' : 'static',
+                                                left: 0,
+                                                background: idx % 2 === 0 ? '#fff' : '#f9f9f9',
+                                                zIndex: 5,
+                                                borderRight: cellIdx === 0 ? '2px solid #eee' : 'none'
+                                            }}>
+                                                {cell}
+                                            </td>
+                                        ))}
                                     </tr>
                                 ))}
-                                <tr style={{ background: '#2B3E4A', color: 'white', fontWeight: 'bold' }}>
-                                    <td colSpan={6} style={{ padding: '15px', textAlign: 'right' }}>Grand Total</td>
-                                    <td style={{ padding: '15px', textAlign: 'right', fontSize: '1.2rem', color: '#4FD1C5' }}>{slide.total}</td>
-                                </tr>
+                                {slide.totalRow && (
+                                    <tr style={{ background: '#2B3E4A', color: 'white', fontWeight: 'bold' }}>
+                                        <td colSpan={slide.headers.length - 1} style={{ padding: '15px', textAlign: 'right', position: 'sticky', left: 0, background: '#2B3E4A', zIndex: 5 }}>Grand Total</td>
+                                        <td style={{ padding: '15px', textAlign: 'right', fontSize: '1.2rem', color: '#4FD1C5' }}>{slide.total}</td>
+                                    </tr>
+                                )}
                             </tbody>
                         </motion.table>
                     </div>
