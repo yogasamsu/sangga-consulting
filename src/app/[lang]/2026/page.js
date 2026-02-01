@@ -35,6 +35,16 @@ const slides = [
         color: '#fff'
     },
     {
+        id: 'problem',
+        layout: 'center',
+        title: 'The Challenge',
+        subtitle: "We can't rely on 'Waiting for Putut' forever.",
+        content: 'Current State: Passive Reliance on Referrals.\nFuture State: Active, Systematic Trust Building.',
+        icon: <FaLightbulb />,
+        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
+        color: '#fff'
+    },
+    {
         id: 'communication-topics',
         layout: 'three-pillars',
         title: 'Communication Topics',
@@ -60,16 +70,7 @@ const slides = [
         bg: 'linear-gradient(135deg, #134E4A 0%, #0F766E 100%)',
         color: '#fff'
     },
-    {
-        id: 'problem',
-        layout: 'center',
-        title: 'The Challenge',
-        subtitle: "We can't rely on 'Waiting for Putut' forever.",
-        content: 'Current State: Passive Reliance on Referrals.\nFuture State: Active, Systematic Trust Building.',
-        icon: <FaLightbulb />,
-        bg: 'linear-gradient(135deg, #0F766E 0%, #134E4A 100%)',
-        color: '#fff'
-    },
+
     {
         id: 'market',
         layout: 'chart',
