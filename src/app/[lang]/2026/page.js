@@ -52,10 +52,10 @@ const slides = [
         content: {
             tam: '2.81 Billion USD',
             tamDesc: 'Indonesia Consulting Market (2026 Est.)',
-            sam: '300 M USD',
-            samDesc: 'SME & Gov Consulting (DIY/Jateng)',
-            som: '1.2 Billion IDR',
-            somDesc: 'Sangga Consulting Target (0.02% of SAM)',
+            sam: '1.2 Billion IDR',
+            samDesc: 'Serviceable Market (Target 2026)',
+            som: '300 Million IDR',
+            somDesc: 'Existing / Current Revenue',
             source: 'Sources: Mordor Intelligence (Indonesia Consulting Market Outlook), BPS DIY (Regional GDP Data), Internal Capacity Analysis.'
         },
         bg: 'linear-gradient(135deg, #115E59 0%, #0D9488 100%)',
